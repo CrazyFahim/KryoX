@@ -1,0 +1,5 @@
+operator A = [[1, 2], [3, 4]];
+operator B = [[0, 1], [-1, 0]];
+
+print A @ B;
+print B @ A;

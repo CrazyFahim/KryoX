@@ -1,0 +1,5 @@
+operator D = [[0, 1], [-1, 0]];
+operator F = [[1, 0], [0, 1]];
+
+L = F @ (D + 2*D);
+print L;

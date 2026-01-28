@@ -1,0 +1,74 @@
+[
+{
+  "directory": "/media/fahim/Dell External/All-About-Machine-Learning-and-Deep-Learing/NON-PAPER-implementation-Projects/ML-Compiler-Exploration/Linear-operator-compiler/build",
+  "command": "/usr/bin/c++  -I\"/media/fahim/Dell External/All-About-Machine-Learning-and-Deep-Learing/NON-PAPER-implementation-Projects/ML-Compiler-Exploration/Linear-operator-compiler/include\" -I\"/media/fahim/Dell External/All-About-Machine-Learning-and-Deep-Learing/NON-PAPER-implementation-Projects/ML-Compiler-Exploration/Linear-operator-compiler/build\" -std=gnu++17 -Wall -Wextra -Wpedantic -o CMakeFiles/loc.dir/src/main.cpp.o -c \"/media/fahim/Dell External/All-About-Machine-Learning-and-Deep-Learing/NON-PAPER-implementation-Projects/ML-Compiler-Exploration/Linear-operator-compiler/src/main.cpp\"",
+  "file": "/media/fahim/Dell External/All-About-Machine-Learning-and-Deep-Learing/NON-PAPER-implementation-Projects/ML-Compiler-Exploration/Linear-operator-compiler/src/main.cpp",
+  "output": "CMakeFiles/loc.dir/src/main.cpp.o"
+},
+{
+  "directory": "/media/fahim/Dell External/All-About-Machine-Learning-and-Deep-Learing/NON-PAPER-implementation-Projects/ML-Compiler-Exploration/Linear-operator-compiler/build",
+  "command": "/usr/bin/c++  -I\"/media/fahim/Dell External/All-About-Machine-Learning-and-Deep-Learing/NON-PAPER-implementation-Projects/ML-Compiler-Exploration/Linear-operator-compiler/include\" -I\"/media/fahim/Dell External/All-About-Machine-Learning-and-Deep-Learing/NON-PAPER-implementation-Projects/ML-Compiler-Exploration/Linear-operator-compiler/build\" -std=gnu++17 -Wall -Wextra -Wpedantic -o CMakeFiles/loc.dir/src/frontend/ast.cpp.o -c \"/media/fahim/Dell External/All-About-Machine-Learning-and-Deep-Learing/NON-PAPER-implementation-Projects/ML-Compiler-Exploration/Linear-operator-compiler/src/frontend/ast.cpp\"",
+  "file": "/media/fahim/Dell External/All-About-Machine-Learning-and-Deep-Learing/NON-PAPER-implementation-Projects/ML-Compiler-Exploration/Linear-operator-compiler/src/frontend/ast.cpp",
+  "output": "CMakeFiles/loc.dir/src/frontend/ast.cpp.o"
+},
+{
+  "directory": "/media/fahim/Dell External/All-About-Machine-Learning-and-Deep-Learing/NON-PAPER-implementation-Projects/ML-Compiler-Exploration/Linear-operator-compiler/build",
+  "command": "/usr/bin/c++  -I\"/media/fahim/Dell External/All-About-Machine-Learning-and-Deep-Learing/NON-PAPER-implementation-Projects/ML-Compiler-Exploration/Linear-operator-compiler/include\" -I\"/media/fahim/Dell External/All-About-Machine-Learning-and-Deep-Learing/NON-PAPER-implementation-Projects/ML-Compiler-Exploration/Linear-operator-compiler/build\" -std=gnu++17 -Wall -Wextra -Wpedantic -o CMakeFiles/loc.dir/parser.cpp.o -c \"/media/fahim/Dell External/All-About-Machine-Learning-and-Deep-Learing/NON-PAPER-implementation-Projects/ML-Compiler-Exploration/Linear-operator-compiler/build/parser.cpp\"",
+  "file": "/media/fahim/Dell External/All-About-Machine-Learning-and-Deep-Learing/NON-PAPER-implementation-Projects/ML-Compiler-Exploration/Linear-operator-compiler/build/parser.cpp",
+  "output": "CMakeFiles/loc.dir/parser.cpp.o"
+},
+{
+  "directory": "/media/fahim/Dell External/All-About-Machine-Learning-and-Deep-Learing/NON-PAPER-implementation-Projects/ML-Compiler-Exploration/Linear-operator-compiler/build",
+  "command": "/usr/bin/c++  -I\"/media/fahim/Dell External/All-About-Machine-Learning-and-Deep-Learing/NON-PAPER-implementation-Projects/ML-Compiler-Exploration/Linear-operator-compiler/include\" -I\"/media/fahim/Dell External/All-About-Machine-Learning-and-Deep-Learing/NON-PAPER-implementation-Projects/ML-Compiler-Exploration/Linear-operator-compiler/build\" -std=gnu++17 -Wall -Wextra -Wpedantic -o CMakeFiles/loc.dir/lexer.cpp.o -c \"/media/fahim/Dell External/All-About-Machine-Learning-and-Deep-Learing/NON-PAPER-implementation-Projects/ML-Compiler-Exploration/Linear-operator-compiler/build/lexer.cpp\"",
+  "file": "/media/fahim/Dell External/All-About-Machine-Learning-and-Deep-Learing/NON-PAPER-implementation-Projects/ML-Compiler-Exploration/Linear-operator-compiler/build/lexer.cpp",
+  "output": "CMakeFiles/loc.dir/lexer.cpp.o"
+},
+{
+  "directory": "/media/fahim/Dell External/All-About-Machine-Learning-and-Deep-Learing/NON-PAPER-implementation-Projects/ML-Compiler-Exploration/Linear-operator-compiler/build",
+  "command": "/usr/bin/c++  -I\"/media/fahim/Dell External/All-About-Machine-Learning-and-Deep-Learing/NON-PAPER-implementation-Projects/ML-Compiler-Exploration/Linear-operator-compiler/include\" -I\"/media/fahim/Dell External/All-About-Machine-Learning-and-Deep-Learing/NON-PAPER-implementation-Projects/ML-Compiler-Exploration/Linear-operator-compiler/build\" -std=gnu++17 -Wall -Wextra -Wpedantic -o CMakeFiles/loc.dir/src/ir/graph.cpp.o -c \"/media/fahim/Dell External/All-About-Machine-Learning-and-Deep-Learing/NON-PAPER-implementation-Projects/ML-Compiler-Exploration/Linear-operator-compiler/src/ir/graph.cpp\"",
+  "file": "/media/fahim/Dell External/All-About-Machine-Learning-and-Deep-Learing/NON-PAPER-implementation-Projects/ML-Compiler-Exploration/Linear-operator-compiler/src/ir/graph.cpp",
+  "output": "CMakeFiles/loc.dir/src/ir/graph.cpp.o"
+},
+{
+  "directory": "/media/fahim/Dell External/All-About-Machine-Learning-and-Deep-Learing/NON-PAPER-implementation-Projects/ML-Compiler-Exploration/Linear-operator-compiler/build",
+  "command": "/usr/bin/c++  -I\"/media/fahim/Dell External/All-About-Machine-Learning-and-Deep-Learing/NON-PAPER-implementation-Projects/ML-Compiler-Exploration/Linear-operator-compiler/include\" -I\"/media/fahim/Dell External/All-About-Machine-Learning-and-Deep-Learing/NON-PAPER-implementation-Projects/ML-Compiler-Exploration/Linear-operator-compiler/build\" -std=gnu++17 -Wall -Wextra -Wpedantic -o CMakeFiles/loc.dir/src/passes/simplify.cpp.o -c \"/media/fahim/Dell External/All-About-Machine-Learning-and-Deep-Learing/NON-PAPER-implementation-Projects/ML-Compiler-Exploration/Linear-operator-compiler/src/passes/simplify.cpp\"",
+  "file": "/media/fahim/Dell External/All-About-Machine-Learning-and-Deep-Learing/NON-PAPER-implementation-Projects/ML-Compiler-Exploration/Linear-operator-compiler/src/passes/simplify.cpp",
+  "output": "CMakeFiles/loc.dir/src/passes/simplify.cpp.o"
+},
+{
+  "directory": "/media/fahim/Dell External/All-About-Machine-Learning-and-Deep-Learing/NON-PAPER-implementation-Projects/ML-Compiler-Exploration/Linear-operator-compiler/build",
+  "command": "/usr/bin/c++  -I\"/media/fahim/Dell External/All-About-Machine-Learning-and-Deep-Learing/NON-PAPER-implementation-Projects/ML-Compiler-Exploration/Linear-operator-compiler/include\" -I\"/media/fahim/Dell External/All-About-Machine-Learning-and-Deep-Learing/NON-PAPER-implementation-Projects/ML-Compiler-Exploration/Linear-operator-compiler/build\" -std=gnu++17 -Wall -Wextra -Wpedantic -o CMakeFiles/loc.dir/src/passes/resolve_prints.cpp.o -c \"/media/fahim/Dell External/All-About-Machine-Learning-and-Deep-Learing/NON-PAPER-implementation-Projects/ML-Compiler-Exploration/Linear-operator-compiler/src/passes/resolve_prints.cpp\"",
+  "file": "/media/fahim/Dell External/All-About-Machine-Learning-and-Deep-Learing/NON-PAPER-implementation-Projects/ML-Compiler-Exploration/Linear-operator-compiler/src/passes/resolve_prints.cpp",
+  "output": "CMakeFiles/loc.dir/src/passes/resolve_prints.cpp.o"
+},
+{
+  "directory": "/media/fahim/Dell External/All-About-Machine-Learning-and-Deep-Learing/NON-PAPER-implementation-Projects/ML-Compiler-Exploration/Linear-operator-compiler/build",
+  "command": "/usr/bin/c++  -I\"/media/fahim/Dell External/All-About-Machine-Learning-and-Deep-Learing/NON-PAPER-implementation-Projects/ML-Compiler-Exploration/Linear-operator-compiler/include\" -I\"/media/fahim/Dell External/All-About-Machine-Learning-and-Deep-Learing/NON-PAPER-implementation-Projects/ML-Compiler-Exploration/Linear-operator-compiler/build\" -std=gnu++17 -Wall -Wextra -Wpedantic -o CMakeFiles/loc.dir/src/runtime/executor.cpp.o -c \"/media/fahim/Dell External/All-About-Machine-Learning-and-Deep-Learing/NON-PAPER-implementation-Projects/ML-Compiler-Exploration/Linear-operator-compiler/src/runtime/executor.cpp\"",
+  "file": "/media/fahim/Dell External/All-About-Machine-Learning-and-Deep-Learing/NON-PAPER-implementation-Projects/ML-Compiler-Exploration/Linear-operator-compiler/src/runtime/executor.cpp",
+  "output": "CMakeFiles/loc.dir/src/runtime/executor.cpp.o"
+},
+{
+  "directory": "/media/fahim/Dell External/All-About-Machine-Learning-and-Deep-Learing/NON-PAPER-implementation-Projects/ML-Compiler-Exploration/Linear-operator-compiler/build",
+  "command": "/usr/bin/c++  -I\"/media/fahim/Dell External/All-About-Machine-Learning-and-Deep-Learing/NON-PAPER-implementation-Projects/ML-Compiler-Exploration/Linear-operator-compiler/include\" -I\"/media/fahim/Dell External/All-About-Machine-Learning-and-Deep-Learing/NON-PAPER-implementation-Projects/ML-Compiler-Exploration/Linear-operator-compiler/build\" -std=gnu++17 -Wall -Wextra -Wpedantic -o CMakeFiles/loc.dir/src/ir/dce.cpp.o -c \"/media/fahim/Dell External/All-About-Machine-Learning-and-Deep-Learing/NON-PAPER-implementation-Projects/ML-Compiler-Exploration/Linear-operator-compiler/src/ir/dce.cpp\"",
+  "file": "/media/fahim/Dell External/All-About-Machine-Learning-and-Deep-Learing/NON-PAPER-implementation-Projects/ML-Compiler-Exploration/Linear-operator-compiler/src/ir/dce.cpp",
+  "output": "CMakeFiles/loc.dir/src/ir/dce.cpp.o"
+},
+{
+  "directory": "/media/fahim/Dell External/All-About-Machine-Learning-and-Deep-Learing/NON-PAPER-implementation-Projects/ML-Compiler-Exploration/Linear-operator-compiler/build",
+  "command": "/usr/bin/c++  -I\"/media/fahim/Dell External/All-About-Machine-Learning-and-Deep-Learing/NON-PAPER-implementation-Projects/ML-Compiler-Exploration/Linear-operator-compiler/include\" -I\"/media/fahim/Dell External/All-About-Machine-Learning-and-Deep-Learing/NON-PAPER-implementation-Projects/ML-Compiler-Exploration/Linear-operator-compiler/build\" -std=gnu++17 -Wall -Wextra -Wpedantic -o CMakeFiles/loc.dir/src/ir/const_fold.cpp.o -c \"/media/fahim/Dell External/All-About-Machine-Learning-and-Deep-Learing/NON-PAPER-implementation-Projects/ML-Compiler-Exploration/Linear-operator-compiler/src/ir/const_fold.cpp\"",
+  "file": "/media/fahim/Dell External/All-About-Machine-Learning-and-Deep-Learing/NON-PAPER-implementation-Projects/ML-Compiler-Exploration/Linear-operator-compiler/src/ir/const_fold.cpp",
+  "output": "CMakeFiles/loc.dir/src/ir/const_fold.cpp.o"
+},
+{
+  "directory": "/media/fahim/Dell External/All-About-Machine-Learning-and-Deep-Learing/NON-PAPER-implementation-Projects/ML-Compiler-Exploration/Linear-operator-compiler/build",
+  "command": "/usr/bin/c++  -I\"/media/fahim/Dell External/All-About-Machine-Learning-and-Deep-Learing/NON-PAPER-implementation-Projects/ML-Compiler-Exploration/Linear-operator-compiler/include\" -I\"/media/fahim/Dell External/All-About-Machine-Learning-and-Deep-Learing/NON-PAPER-implementation-Projects/ML-Compiler-Exploration/Linear-operator-compiler/build\" -std=gnu++17 -Wall -Wextra -Wpedantic -o CMakeFiles/loc.dir/src/runtime/matrix.cpp.o -c \"/media/fahim/Dell External/All-About-Machine-Learning-and-Deep-Learing/NON-PAPER-implementation-Projects/ML-Compiler-Exploration/Linear-operator-compiler/src/runtime/matrix.cpp\"",
+  "file": "/media/fahim/Dell External/All-About-Machine-Learning-and-Deep-Learing/NON-PAPER-implementation-Projects/ML-Compiler-Exploration/Linear-operator-compiler/src/runtime/matrix.cpp",
+  "output": "CMakeFiles/loc.dir/src/runtime/matrix.cpp.o"
+},
+{
+  "directory": "/media/fahim/Dell External/All-About-Machine-Learning-and-Deep-Learing/NON-PAPER-implementation-Projects/ML-Compiler-Exploration/Linear-operator-compiler/build",
+  "command": "/usr/bin/c++  -I\"/media/fahim/Dell External/All-About-Machine-Learning-and-Deep-Learing/NON-PAPER-implementation-Projects/ML-Compiler-Exploration/Linear-operator-compiler/include\" -I\"/media/fahim/Dell External/All-About-Machine-Learning-and-Deep-Learing/NON-PAPER-implementation-Projects/ML-Compiler-Exploration/Linear-operator-compiler/build\" -std=gnu++17 -Wall -Wextra -Wpedantic -o CMakeFiles/loc.dir/src/runtime/registry.cpp.o -c \"/media/fahim/Dell External/All-About-Machine-Learning-and-Deep-Learing/NON-PAPER-implementation-Projects/ML-Compiler-Exploration/Linear-operator-compiler/src/runtime/registry.cpp\"",
+  "file": "/media/fahim/Dell External/All-About-Machine-Learning-and-Deep-Learing/NON-PAPER-implementation-Projects/ML-Compiler-Exploration/Linear-operator-compiler/src/runtime/registry.cpp",
+  "output": "CMakeFiles/loc.dir/src/runtime/registry.cpp.o"
+}
+]
