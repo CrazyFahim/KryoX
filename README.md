@@ -3,7 +3,7 @@
 An experimental **compiler + runtime** for linear operator algebra, inspired by
 machine-learning systems such as **PyTorch**, **XLA**, and **MLIR**.
 
-LOC parses a small domain-specific language (DSL) for linear operators,
+KryoX parses a small domain-specific language (DSL) for linear operators,
 lowers it into an intermediate representation (IR), applies optimization
 passes, and executes it on a simple matrix runtime.
 
