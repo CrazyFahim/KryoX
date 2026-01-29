@@ -1,4 +1,4 @@
-**# KryoX the linear operator compiler (LOC)**
+** # KryoX the linear operator compiler (LOC)**
 
 An experimental **compiler + runtime** for linear operator algebra, inspired by
 machine-learning systems such as **PyTorch**, **XLA**, and **MLIR**.
