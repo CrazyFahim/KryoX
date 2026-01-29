@@ -1,3 +1,0 @@
-/media/fahim/Dell External/All-About-Machine-Learning-and-Deep-Learing/NON-PAPER-implementation-Projects/ML-Compiler-Exploration/Linear-operator-compiler/build/CMakeFiles/loc.dir
-/media/fahim/Dell External/All-About-Machine-Learning-and-Deep-Learing/NON-PAPER-implementation-Projects/ML-Compiler-Exploration/Linear-operator-compiler/build/CMakeFiles/edit_cache.dir
-/media/fahim/Dell External/All-About-Machine-Learning-and-Deep-Learing/NON-PAPER-implementation-Projects/ML-Compiler-Exploration/Linear-operator-compiler/build/CMakeFiles/rebuild_cache.dir
