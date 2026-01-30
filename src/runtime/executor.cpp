@@ -4,66 +4,74 @@
 
 namespace loc::rt {
 
-Matrix Executor::eval_node(const loc::ir::Graph& g, int node_id) {
-    auto it = cache_.find(node_id);
-    if (it != cache_.end()) return it->second;
-
-    if (node_id < 0 || node_id >= (int)g.nodes.size())
-        throw std::runtime_error("Executor: bad node id");
-
-    const auto& n = g.nodes[node_id];
-    Matrix out;
-
-    using loc::ir::NodeKind;
-
-    switch (n.kind) {
-        case NodeKind::Op: {
-            out = reg_.get(n.name); // copy
-            break;
-        }
-        case NodeKind::ScalarMul: {
-            Matrix x = eval_node(g, n.inputs.at(0));
-            out = n.scalar * x;
-            break;
-        }
-        case NodeKind::Add: {
-            Matrix a = eval_node(g, n.inputs.at(0));
-            Matrix b = eval_node(g, n.inputs.at(1));
-            out = a + b;
-            break;
-        }
-        case NodeKind::Compose: {
-            Matrix a = eval_node(g, n.inputs.at(0));
-            Matrix b = eval_node(g, n.inputs.at(1));
-            out = matmul(a, b);
-            break;
-        }
-        default:
-            throw std::runtime_error("Executor: unsupported IR node kind");
-    }
-
-    cache_[node_id] = out;
-    return out;
-}
 
 void Executor::run(const loc::ir::Graph& g) {
-    cache_.clear();
-
-    // optional: store assignments as named results (debug)
-    std::unordered_map<std::string, Matrix> env;
+    // Resize and clear cache for the new run
+    cache_.assign(g.nodes.size(), std::nullopt);
 
     for (const auto& s : g.program) {
         if (s.kind == loc::ir::Graph::Stmt::Kind::Assign) {
-            env[s.name] = eval_node(g, s.value);
-            continue;
-        }
-
-        if (s.kind == loc::ir::Graph::Stmt::Kind::Print) {
-            Matrix v = eval_node(g, s.value);
-            std::cout << "\n[print]\n" << v;
-            continue;
+            (void)eval(g, s.value);
+        } else if (s.kind == loc::ir::Graph::Stmt::Kind::Print) {
+            Matrix v = eval(g, s.value);
+            std::cout << "\n[print]\n" << v << "\n";
+        } else {
+            throw std::runtime_error("Executor: unknown stmt kind");
         }
     }
 }
 
+Matrix Executor::eval(const loc::ir::Graph& g, int id) {
+    if (id < 0 || id >= (int)g.nodes.size()) {
+        throw std::runtime_error("Executor: invalid node id");
+    }
+
+    // Check cache
+    if (cache_[id].has_value()) {
+        // std::cout << "Computing node (cached) " << id << "\n"; // DEBUG
+        return *cache_[id];
+    }
+    
+    // std::cout << "Computing node (fresh) " << id << "\n"; // DEBUG
+
+    const auto& n = g.nodes[id];
+    using K = loc::ir::NodeKind; 
+
+    Matrix result;
+
+    switch (n.kind) {
+    case K::Op:
+        result = reg_.get(n.name);
+        break;
+
+    case K::ScalarMul: {
+        Matrix a = eval(g, n.inputs.at(0));
+        result = a * n.scalar;
+        break;
+    }
+
+    case K::Add: {
+        Matrix a = eval(g, n.inputs.at(0));
+        Matrix b = eval(g, n.inputs.at(1));
+        result = a + b;
+        break;
+    }
+
+    case K::Compose: {
+        Matrix a = eval(g, n.inputs.at(0));
+        Matrix b = eval(g, n.inputs.at(1));
+        result = a.matmul(b);
+        break;
+    }
+    
+    default:
+        throw std::runtime_error("Executor: unreachable");
+    }
+
+    // Store in cache
+    cache_[id] = result;
+    return result;
+}
+
 } // namespace loc::rt
+

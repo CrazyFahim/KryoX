@@ -18,6 +18,7 @@
 
 int yyparse();
 extern loc::ast::Program* g_program;
+extern FILE* yyin;
 
 // Convert AST MatrixLiteral -> runtime Matrix
 static loc::rt::Matrix to_matrix(const loc::ast::MatrixLiteral& lit) {
@@ -44,9 +45,21 @@ static loc::rt::Matrix to_matrix(const loc::ast::MatrixLiteral& lit) {
     return M;
 }
 
-int main() {
+int main(int argc, char** argv) {
+    // 0) Handle Input
+    if (argc > 1) {
+        FILE* f = fopen(argv[1], "r");
+        if (!f) {
+            std::cerr << "Error: could not open file " << argv[1] << "\n";
+            return 1;
+        }
+        yyin = f;
+    }
+
     // 1) Parse
-    yyparse();
+    if (yyparse() != 0) {
+        return 1;
+    }
     if (!g_program) return 1;
 
     // 2) AST passes

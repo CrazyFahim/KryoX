@@ -114,6 +114,10 @@ Graph lower_program(const loc::ast::Program& prog) {
             s.name = asn->name;
             s.value = v;
             g.program.push_back(std::move(s));
+            
+            // Allow variable reuse in subsequent statements
+            op_cache[asn->name] = v;
+            expr_cache["id:" + asn->name] = v;
             continue;
         }
 

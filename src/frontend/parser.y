@@ -170,6 +170,8 @@ number_list:
 
 %%
 
+extern int yylineno;
+
 void yyerror(const char* s) {
-    std::cerr << "Parse error: " << s << std::endl;
+    std::cerr << "Parse error at line " << yylineno << ": " << s << std::endl;
 }

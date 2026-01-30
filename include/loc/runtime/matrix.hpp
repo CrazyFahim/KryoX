@@ -18,11 +18,15 @@ public:
     double& operator()(std::size_t i, std::size_t j);
     double  operator()(std::size_t i, std::size_t j) const;
 
+    Matrix matmul(const Matrix& b) const;
+
     // ops
     friend Matrix operator+(const Matrix& a, const Matrix& b);
     friend Matrix operator*(double s, const Matrix& a);
     friend Matrix operator*(const Matrix& a, double s) { return s * a; }
-    friend Matrix matmul(const Matrix& a, const Matrix& b);
+
+    // (optional convenience wrapper)
+    friend Matrix matmul(const Matrix& a, const Matrix& b) { return a.matmul(b); }
 
     friend std::ostream& operator<<(std::ostream& os, const Matrix& m);
 

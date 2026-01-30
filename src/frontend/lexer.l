@@ -1,4 +1,4 @@
-%option noyywrap nounput noinput
+%option noyywrap nounput noinput yylineno
 
 %{
 #include "parser.hpp"
@@ -8,6 +8,7 @@
 
 %%
 
+#.*                                 ;   /* skip comments */
 [ \t\r\n]+                          ;   /* skip whitespace */
 
 "operator"                          return OPERATOR;

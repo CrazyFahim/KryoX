@@ -1,0 +1,5 @@
+operator A = [[2, 0], [0, 2]];
+# simple DAG reuse
+B = A @ A;
+C = B + B;
+print C;
